@@ -35,6 +35,7 @@ Partial Class Form1
         Me.btnRead = New System.Windows.Forms.Button()
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnConnect = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -154,12 +155,24 @@ Partial Class Form1
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = False
         '
+        'btnConnect
+        '
+        Me.btnConnect.BackColor = System.Drawing.Color.Snow
+        Me.btnConnect.ForeColor = System.Drawing.Color.SeaGreen
+        Me.btnConnect.Location = New System.Drawing.Point(266, 30)
+        Me.btnConnect.Name = "btnConnect"
+        Me.btnConnect.Size = New System.Drawing.Size(114, 63)
+        Me.btnConnect.TabIndex = 13
+        Me.btnConnect.Text = "Connect To Database"
+        Me.btnConnect.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(410, 497)
+        Me.Controls.Add(Me.btnConnect)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnRead)
@@ -194,4 +207,5 @@ Partial Class Form1
     Friend WithEvents btnRead As Button
     Friend WithEvents btnUpdate As Button
     Friend WithEvents btnDelete As Button
+    Friend WithEvents btnConnect As Button
 End Class
