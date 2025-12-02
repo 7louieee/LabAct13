@@ -22,49 +22,49 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtPatientID = New System.Windows.Forms.TextBox()
+        Me.txtPatientName = New System.Windows.Forms.TextBox()
+        Me.txtRoomNumber = New System.Windows.Forms.TextBox()
+        Me.txtPatientAge = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCreate = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnRead = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtPatientID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(28, 30)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(211, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.txtPatientID.Location = New System.Drawing.Point(28, 30)
+        Me.txtPatientID.Name = "txtPatientID"
+        Me.txtPatientID.Size = New System.Drawing.Size(211, 20)
+        Me.txtPatientID.TabIndex = 0
         '
-        'TextBox2
+        'txtPatientName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(28, 73)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(211, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.txtPatientName.Location = New System.Drawing.Point(28, 73)
+        Me.txtPatientName.Name = "txtPatientName"
+        Me.txtPatientName.Size = New System.Drawing.Size(211, 20)
+        Me.txtPatientName.TabIndex = 1
         '
-        'TextBox3
+        'txtRoomNumber
         '
-        Me.TextBox3.Location = New System.Drawing.Point(28, 158)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(211, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.txtRoomNumber.Location = New System.Drawing.Point(28, 158)
+        Me.txtRoomNumber.Name = "txtRoomNumber"
+        Me.txtRoomNumber.Size = New System.Drawing.Size(211, 20)
+        Me.txtRoomNumber.TabIndex = 2
         '
-        'TextBox4
+        'txtPatientAge
         '
-        Me.TextBox4.Location = New System.Drawing.Point(28, 115)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(211, 20)
-        Me.TextBox4.TabIndex = 2
+        Me.txtPatientAge.Location = New System.Drawing.Point(28, 115)
+        Me.txtPatientAge.Name = "txtPatientAge"
+        Me.txtPatientAge.Size = New System.Drawing.Size(211, 20)
+        Me.txtPatientAge.TabIndex = 2
         '
         'Label1
         '
@@ -102,14 +102,16 @@ Partial Class Form1
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Room Number:"
         '
-        'Button1
+        'btnCreate
         '
-        Me.Button1.Location = New System.Drawing.Point(266, 142)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 36)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Create Patient Data"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCreate.BackColor = System.Drawing.Color.Snow
+        Me.btnCreate.ForeColor = System.Drawing.Color.SeaGreen
+        Me.btnCreate.Location = New System.Drawing.Point(266, 142)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(114, 36)
+        Me.btnCreate.TabIndex = 7
+        Me.btnCreate.Text = "Create Patient Data"
+        Me.btnCreate.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
@@ -119,51 +121,58 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(352, 187)
         Me.DataGridView1.TabIndex = 9
         '
-        'Button2
+        'btnRead
         '
-        Me.Button2.Location = New System.Drawing.Point(28, 197)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(114, 35)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "Read"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnRead.BackColor = System.Drawing.Color.AliceBlue
+        Me.btnRead.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.btnRead.Location = New System.Drawing.Point(28, 197)
+        Me.btnRead.Name = "btnRead"
+        Me.btnRead.Size = New System.Drawing.Size(114, 35)
+        Me.btnRead.TabIndex = 10
+        Me.btnRead.Text = "Read"
+        Me.btnRead.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnUpdate
         '
-        Me.Button3.Location = New System.Drawing.Point(28, 431)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(114, 35)
-        Me.Button3.TabIndex = 11
-        Me.Button3.Text = "Update"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnUpdate.BackColor = System.Drawing.Color.AliceBlue
+        Me.btnUpdate.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.btnUpdate.Location = New System.Drawing.Point(28, 431)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(114, 35)
+        Me.btnUpdate.TabIndex = 11
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnDelete
         '
-        Me.Button4.Location = New System.Drawing.Point(266, 431)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(114, 35)
-        Me.Button4.TabIndex = 12
-        Me.Button4.Text = "Delete"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnDelete.BackColor = System.Drawing.Color.AliceBlue
+        Me.btnDelete.ForeColor = System.Drawing.Color.Crimson
+        Me.btnDelete.Location = New System.Drawing.Point(266, 431)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(114, 35)
+        Me.btnDelete.TabIndex = 12
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(410, 497)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.btnRead)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCreate)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPatientAge)
+        Me.Controls.Add(Me.txtRoomNumber)
+        Me.Controls.Add(Me.txtPatientName)
+        Me.Controls.Add(Me.txtPatientID)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -172,17 +181,17 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtPatientID As TextBox
+    Friend WithEvents txtPatientName As TextBox
+    Friend WithEvents txtRoomNumber As TextBox
+    Friend WithEvents txtPatientAge As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCreate As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnRead As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents btnDelete As Button
 End Class
