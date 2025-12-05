@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.txtPatientID = New System.Windows.Forms.TextBox()
         Me.txtPatientName = New System.Windows.Forms.TextBox()
         Me.txtRoomNumber = New System.Windows.Forms.TextBox()
@@ -107,17 +108,18 @@ Partial Class Form1
         '
         Me.btnCreate.BackColor = System.Drawing.Color.Snow
         Me.btnCreate.ForeColor = System.Drawing.Color.SeaGreen
-        Me.btnCreate.Location = New System.Drawing.Point(266, 142)
+        Me.btnCreate.Location = New System.Drawing.Point(28, 184)
         Me.btnCreate.Name = "btnCreate"
-        Me.btnCreate.Size = New System.Drawing.Size(114, 36)
+        Me.btnCreate.Size = New System.Drawing.Size(114, 56)
         Me.btnCreate.TabIndex = 7
         Me.btnCreate.Text = "Create Patient Data"
         Me.btnCreate.UseVisualStyleBackColor = False
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(28, 238)
+        Me.DataGridView1.Location = New System.Drawing.Point(400, 12)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(352, 187)
         Me.DataGridView1.TabIndex = 9
@@ -126,7 +128,7 @@ Partial Class Form1
         '
         Me.btnRead.BackColor = System.Drawing.Color.AliceBlue
         Me.btnRead.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.btnRead.Location = New System.Drawing.Point(28, 197)
+        Me.btnRead.Location = New System.Drawing.Point(400, 205)
         Me.btnRead.Name = "btnRead"
         Me.btnRead.Size = New System.Drawing.Size(114, 35)
         Me.btnRead.TabIndex = 10
@@ -137,7 +139,7 @@ Partial Class Form1
         '
         Me.btnUpdate.BackColor = System.Drawing.Color.AliceBlue
         Me.btnUpdate.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.btnUpdate.Location = New System.Drawing.Point(28, 431)
+        Me.btnUpdate.Location = New System.Drawing.Point(520, 205)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(114, 35)
         Me.btnUpdate.TabIndex = 11
@@ -148,7 +150,7 @@ Partial Class Form1
         '
         Me.btnDelete.BackColor = System.Drawing.Color.AliceBlue
         Me.btnDelete.ForeColor = System.Drawing.Color.Crimson
-        Me.btnDelete.Location = New System.Drawing.Point(266, 431)
+        Me.btnDelete.Location = New System.Drawing.Point(640, 205)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(114, 35)
         Me.btnDelete.TabIndex = 12
@@ -159,7 +161,7 @@ Partial Class Form1
         '
         Me.btnConnect.BackColor = System.Drawing.Color.Snow
         Me.btnConnect.ForeColor = System.Drawing.Color.SeaGreen
-        Me.btnConnect.Location = New System.Drawing.Point(266, 30)
+        Me.btnConnect.Location = New System.Drawing.Point(269, 74)
         Me.btnConnect.Name = "btnConnect"
         Me.btnConnect.Size = New System.Drawing.Size(114, 63)
         Me.btnConnect.TabIndex = 13
@@ -170,8 +172,9 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(410, 497)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(773, 253)
         Me.Controls.Add(Me.btnConnect)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnUpdate)

@@ -130,7 +130,7 @@ Public Class Form1
         Dim query As String = "UPDATE `patient_record_system`.`patient_record_system` 
                                 SET `id` = @id,
                                     `name` = @name,
-                                    `age` = @age
+                                    `age` = @age,
                                     `room_number` = @room_number 
                                      WHERE (`id` = @id);"
 
@@ -162,5 +162,6 @@ Public Class Form1
         End Try
 
     End Sub
+
 
 End Class
